@@ -315,7 +315,6 @@ padding-bottom: 30px;
 }
 .name-title {
   text-align: center;
-  
   color: var(--main-color);
   font-weight: 500;
   font-size: 16px;
@@ -330,7 +329,7 @@ padding-bottom: 30px;
   font-size: 16px;
   line-height: 1.2;
 }
-
+/*SOCIAL*/
 .social-links{
   display: flex;
   padding: 16px 32px 30px 32px;
@@ -341,7 +340,7 @@ padding-bottom: 30px;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  cursor: pointer;
+  
 }
 .social-link:not(:last-child){
   margin-right: 10px;
@@ -363,11 +362,72 @@ fill: var(--white-color);
 }
 
 
+
+/*---------------CLIENTS-----------*/
+
+.clients {
+  
+  background-color: var(--white-color);
+padding-top: 94px;
+padding-bottom: 94px;
+}
+
+.client-title{
+  display: block;
+  margin-bottom: 50px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+}
+.client-list{
+  display: flex;
+}
+
+.client-item
+.client-link{
+  display: block;
+  width: 170px;
+  height: 92px;
+
+border: 1px solid #AFB1B8;
+border-radius: 4px;
+
+}
+
+.client-icon{
+  margin: 16px 32px;
+
+width: 106px;
+height: 60px;
+fill: #AFB1B8;
+
+}
+
+.client-link:hover {
+
+  border-color: var(--accent-color);
+}
+
+
+.client-link:hover> .client-icon{
+  fill: var(--accent-color);
+  
+  
+}
+.client-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 /*---------FOOTER---------*/
 .footer {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+.footdiv{
+  display: flex;
 }
 .studio-foot {
   color: var(--white-color);
@@ -396,10 +456,43 @@ fill: var(--white-color);
   margin-bottom: 9px;
 }
 .footer-link:not(:last-child),
-.footer-mail:not(:last-child),,
+.footer-mail:not(:last-child),
 .footer-tel:not(:last-child) {
 margin-bottom: 0;
 }
+
+
+/*--------footer-right-------*/
+
+.footer-right{
+  
+  
+  margin-left: 70px;
+  margin-top: 12px;
+}
+
+.footer-right-title{
+  
+  font-family: 'roboto';
+ font-style: 700;
+ font-size: 14px;
+ line-height: calc(16/14);
+ text-transform: uppercase;
+ text-align: left;
+ color: #FFFFFF;
+letter-spacing: 0.03em;
+margin-bottom: 20px;
+padding-left: 32px;
+}
+
+.footcolor{
+background-color:  rgba(255, 255, 255, 0.1);
+}
+
+
+
+
+
 /*-------------Portfolio-----------*/
 body {
   font-family: Roboto, sans-serif;
