@@ -16,7 +16,7 @@ h6 {
   padding: 0;
 }
 .container {
-width: 1230px;
+width: 1200px;
 margin: 0 auto;
 padding-left: 15px;
 padding-right: 15px;
@@ -26,9 +26,9 @@ ul {
   margin: 0;
   padding: 0;
 }
-*{
+/* *{
   outline: solid 1px  teal;
-}
+} */
 
 body {
   font-family: Roboto, sans-serif;
@@ -145,10 +145,22 @@ margin-left: auto;
 
 /*---------HERO---------*/
 .hero {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #2f303a;
   padding-top: 200px;
   padding-bottom: 200px;
-  
+background-image: linear-gradient(
+  to right,
+ rgba(47, 48, 58, 0.4),
+ rgba(47, 48, 58, 0.4)
+ ), url(../images/prewiev.jpg);
+ 
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+
 }
 .hero .container{
 
@@ -156,9 +168,7 @@ margin-left: auto;
 .hero-title {
   margin: 0 auto;
   text-align: center;
-width: 696px;
-
- 
+  width: 696px;
   margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
@@ -190,7 +200,7 @@ width: 696px;
 .tasks{
   background-color: var(--white-color);
   padding-top: 94px;
-  padding-bottom: 94px;
+  
 }
 .tasks-item::before{
   content: "";
@@ -236,8 +246,8 @@ background-image: url(../svg/antenna.svg)
 
 }
 .tasks-item{
-  width: calc((100% - 90px) / 4)
-  margin: -15px;
+  width: calc((100% - 90px) / 4);
+ 
   min-width: 270px;
 }
 .tasks-item:not(:last-child){
@@ -492,10 +502,7 @@ background-color:  rgba(255, 255, 255, 0.1);
 
 
 /*-------------Portfolio-----------*/
-body {
-  font-family: Roboto, sans-serif;
-  background-color: var(--white-color)
-}
+
 /*projects*/
 .projects {
   padding-top: 94px;
@@ -539,6 +546,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin-right: -15px;
+  margin-left: -15px;
 }
 
 .portfolio-projects .projects-item {
@@ -546,6 +554,9 @@ body {
  margin-right: 30px;
  margin-bottom: 30px;
  border: 1px solid #EEEEEE;
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+0px 4px 4px rgba(0, 0, 0, 0.06),
+1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .portfolio-projects .projects-item:nth-child(3n){
   margin-right: 0;
