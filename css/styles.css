@@ -203,16 +203,16 @@ background-size: 70px 70px;
 background-color: #F5F4FA;
 }
 .antenna-icon::before{
-background-image: url(../svg/antenna\ 1\ \(1\).svg);
+background-image: url(../svg/antenna.svg)
 }
 .clocks-icon::before {
-  background-image: url(../svg/clock\ 1\ \(1\).svg);
+  background-image: url(../svg/clock.svg)
 }
 .diagram-icon::before {
-  background-image: url(../svg/diagram\ 1\ \(1\).svg);
+  background-image: url(../svg/diagram.svg)
 }
 .astronaut-icon::before {
-  background-image: url(../svg/astronaut\ 1\ \(1\).svg);
+  background-image: url(../svg/astronaut.svg)
 }
 .tasks-title {
 
