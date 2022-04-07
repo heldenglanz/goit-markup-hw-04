@@ -16,7 +16,7 @@ h6 {
   padding: 0;
 }
 .container {
-width: 1200px;
+width: 1230px;
 margin: 0 auto;
 padding-left: 15px;
 padding-right: 15px;
@@ -26,9 +26,9 @@ ul {
   margin: 0;
   padding: 0;
 }
-/* *{
+*{
   outline: solid 1px  teal;
-} */
+}
 
 body {
   font-family: Roboto, sans-serif;
@@ -249,7 +249,7 @@ background-image: url(../svg/antenna\ 1\ \(1\).svg);
 .works {
 background-color: var(--white-color);
 padding-top: 94px;
-padding-bottom: 94px;
+
 }
 .works .container{
 
@@ -453,14 +453,12 @@ fill: #AFB1B8;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-  margin-bottom: 9px;
-}
-.footer-link:not(:last-child),
-.footer-mail:not(:last-child),
-.footer-tel:not(:last-child) {
-margin-bottom: 0;
+ 
 }
 
+.footer-list > .list-item:not(:last-child){
+  margin-bottom: 9px;
+}
 
 /*--------footer-right-------*/
 
@@ -540,13 +538,14 @@ body {
 .portfolio-projects {
   display: flex;
   flex-wrap: wrap;
+  margin-right: -15px;
 }
 
 .portfolio-projects .projects-item {
  width: calc(100% - 60px) / 3);
  margin-right: 30px;
  margin-bottom: 30px;
- border-bottom: 1px solid #EEEEEE;
+ border: 1px solid #EEEEEE;
 }
 .portfolio-projects .projects-item:nth-child(3n){
   margin-right: 0;
