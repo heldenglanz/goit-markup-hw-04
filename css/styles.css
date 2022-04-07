@@ -76,10 +76,11 @@ cursor: pointer;
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  margin-right: 93px;
 }
 .studio-head {
   color: var(--main-color);
-  margin-right: 93px;
+  
 }
 
 
@@ -89,7 +90,7 @@ cursor: pointer;
  background-color: var(--white-color);
   padding-top: 25px;
   padding-bottom: 25px;
-  border: 1px solid #ECECEC;
+  border-bottom: 1px solid #ECECEC;
  
 }
 .header .container{
@@ -161,7 +162,9 @@ cursor: pointer;
 
 }
 .header-mail:hover .contact-icon,
-.header-tel:hover .contact-icon{
+.header-mail:focus .contact-icon,
+.header-tel:hover .contact-icon,
+.header-tel:focus .contact-icon{
   fill: var(--accent-color);
 }
 
@@ -334,6 +337,7 @@ padding-bottom: 94px;
   
 }
 .team-list-item{
+  background-color: var(--white-color);
 margin-right: 30px;
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -358,7 +362,7 @@ padding-bottom: 30px;
 .name-text {
   text-align: center;
   margin-top: 10px;
-  
+  margin-bottom: 16px;
   color: var(--second-color);
   font-size: 16px;
   line-height: 1.2;
@@ -366,7 +370,11 @@ padding-bottom: 30px;
 /*--------SOCIAL--------*/
 .social-links{
   display: flex;
-  padding: 16px 32px 30px 32px;
+  justify-content: center;
+  
+}
+.social-item{
+
 }
 .social-link{
   display: block;
@@ -376,7 +384,7 @@ padding-bottom: 30px;
   border-radius: 50%;
   
 }
-.social-link:not(:last-child){
+.social-item:not(:last-child){
   margin-right: 10px;
 }
 
@@ -386,12 +394,15 @@ padding-bottom: 30px;
   width: 20px;
   height: 20px;
 }
-.social-link:hover {
+.social-link:hover,
+.social-link:focus {
  
   background-color: var(--accent-color);
 }
 
-.social-link:hover > .social-icon{
+.social-link:hover > .social-icon,
+.social-link:focus >.social-icon
+{
 fill: var(--white-color);
 }
 
@@ -439,13 +450,15 @@ fill: #AFB1B8;
 
 }
 
-.client-link:hover {
+.client-link:hover,
+.client-link:focus {
 
   border-color: var(--accent-color);
 }
 
 
-.client-link:hover> .client-icon{
+.client-link:hover > .client-icon,
+.client-link:focus >.client-icon{
   fill: var(--accent-color);
   
   
@@ -498,30 +511,37 @@ fill: #AFB1B8;
 
 .footer-right{
   
-  
   margin-left: 70px;
   margin-top: 12px;
+  height: 80px;
 }
 
 .footer-right-title{
-  
-  font-family: 'roboto';
- font-style: 700;
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+ font-weight: 700;
  font-size: 14px;
- line-height: calc(16/14);
+ line-height: 16px;
  text-transform: uppercase;
  text-align: left;
  color: #FFFFFF;
 letter-spacing: 0.03em;
 margin-bottom: 20px;
-padding-left: 32px;
+}
+
+.social-links > .footer-right{
+ 
+  
 }
 
 .footcolor{
 background-color:  rgba(255, 255, 255, 0.1);
 }
 
-
+.footcolor > .social-icon{
+  fill: var(--white-color);
+}
 
 
 
