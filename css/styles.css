@@ -152,15 +152,13 @@ cursor: pointer;
 }
 .icon-mail{
   
-  width: 16px;
-  height: 12px;
+ 
   fill:var(--second-color);
 }
 .icon-tel{
   fill:var(--second-color);
   
-width: 10px;
-height: 16px;
+
 }
 .header-mail:hover .contact-icon,
 .header-tel:hover .contact-icon{
